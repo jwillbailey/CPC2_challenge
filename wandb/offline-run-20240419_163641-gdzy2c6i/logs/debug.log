@@ -1,0 +1,26 @@
+2024-04-19 16:36:41,899 INFO    MainThread:18141 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2024-04-19 16:36:41,900 INFO    MainThread:18141 [wandb_setup.py:_flush():76] Configure stats pid to 18141
+2024-04-19 16:36:41,900 INFO    MainThread:18141 [wandb_setup.py:_flush():76] Loading settings from /home/local/ISDADS/ses440/.config/wandb/settings
+2024-04-19 16:36:41,900 INFO    MainThread:18141 [wandb_setup.py:_flush():76] Loading settings from /home/local/ISDADS/ses440/Documents/GitHub/CPC2_challenge/wandb/settings
+2024-04-19 16:36:41,900 INFO    MainThread:18141 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-04-19 16:36:41,900 INFO    MainThread:18141 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-04-19 16:36:41,900 INFO    MainThread:18141 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'MAIN_predict_intel_correctness_feats.py', 'program_abspath': '/home/local/ISDADS/ses440/Documents/GitHub/CPC2_challenge/MAIN_predict_intel_correctness_feats.py', 'program': '/home/local/ISDADS/ses440/Documents/GitHub/CPC2_challenge/MAIN_predict_intel_correctness_feats.py'}
+2024-04-19 16:36:41,900 INFO    MainThread:18141 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-04-19 16:36:41,900 INFO    MainThread:18141 [wandb_setup.py:_flush():76] Applying login settings: {'mode': 'offline'}
+2024-04-19 16:36:41,900 INFO    MainThread:18141 [wandb_init.py:_log_setup():521] Logging user logs to /home/local/ISDADS/ses440/Documents/GitHub/CPC2_challenge/wandb/offline-run-20240419_163641-gdzy2c6i/logs/debug.log
+2024-04-19 16:36:41,901 INFO    MainThread:18141 [wandb_init.py:_log_setup():522] Logging internal logs to /home/local/ISDADS/ses440/Documents/GitHub/CPC2_challenge/wandb/offline-run-20240419_163641-gdzy2c6i/logs/debug-internal.log
+2024-04-19 16:36:41,901 INFO    MainThread:18141 [wandb_init.py:init():561] calling init triggers
+2024-04-19 16:36:41,901 INFO    MainThread:18141 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {}
+2024-04-19 16:36:41,901 INFO    MainThread:18141 [wandb_init.py:init():611] starting backend
+2024-04-19 16:36:41,901 INFO    MainThread:18141 [wandb_init.py:init():615] setting up manager
+2024-04-19 16:36:41,905 INFO    MainThread:18141 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-04-19 16:36:41,908 INFO    MainThread:18141 [wandb_init.py:init():623] backend started and connected
+2024-04-19 16:36:41,913 INFO    MainThread:18141 [wandb_init.py:init():715] updated telemetry
+2024-04-19 16:36:41,949 INFO    MainThread:18141 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2024-04-19 16:36:41,952 INFO    MainThread:18141 [wandb_init.py:init():799] starting run threads in backend
+2024-04-19 16:36:43,315 INFO    MainThread:18141 [wandb_run.py:_console_start():2335] atexit reg
+2024-04-19 16:36:43,315 INFO    MainThread:18141 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2024-04-19 16:36:43,316 INFO    MainThread:18141 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2024-04-19 16:36:43,316 INFO    MainThread:18141 [wandb_run.py:_redirect():2280] Redirects installed.
+2024-04-19 16:36:43,316 INFO    MainThread:18141 [wandb_init.py:init():842] run started, returning control to user process

@@ -1,6 +1,8 @@
 from torch import Tensor, nn
 from transformers import Wav2Vec2FeatureExtractor, Wav2Vec2Model
-from transformers.models.wav2vec2.modeling_wav2vec2 import Wav2Vec2FeatureEncoder
+from transformers.models.wav2vec2.modeling_wav2vec2 import \
+    Wav2Vec2FeatureEncoder
+
 #import librosa 
 
 
@@ -80,19 +82,20 @@ class Wav2Vec2Wrapper_encoder_only(nn.Module):
         return self.model(data)
 
 if __name__ == "__main__":
-    import soundfile as sf
-    import numpy as np
-    import torch
-    import matplotlib.pyplot as plt
-    from speechbrain.nnet.losses import mse_loss 
-    import os
     import csv
-    from speechbrain.processing.features import spectral_magnitude,STFT
+    import os
+
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import soundfile as sf
+    import torch
+    from speechbrain.nnet.losses import mse_loss
+    from speechbrain.processing.features import STFT, spectral_magnitude
     mod = Wav2Vec2Wrapper()
     try:
-        from models.will_utils import channel_sort,normalize
+        from models.will_utils import channel_sort, normalize
     except:
-        from will_utils import channel_sort,normalize
+        from will_utils import channel_sort, normalize
 
     def compute_feats(wavs):
         """Feature computation pipeline"""

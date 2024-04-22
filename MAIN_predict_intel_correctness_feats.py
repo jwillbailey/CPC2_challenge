@@ -1,37 +1,45 @@
-
-import argparse
-#from GHA import audiogram
-
-import numpy as np
-import numpy
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from tqdm import tqdm
-import torch
-import torch.optim as optim
-import torch.nn as nn
-import speechbrain as sb
-from torch.utils.data import DataLoader
-import os
-import datetime
-import torchaudio.transforms as T
-from scipy.optimize import curve_fit
 import wandb
-from attrdict import AttrDict
-import json
+import argparse
 import csv
-from scipy.stats import spearmanr
-from data_handling import get_disjoint_val_set
+import datetime
+import json
+import os
 # from process_cpc2_data import get_cpc2_dataset
 # from transformers import WhisperProcessor
 import random
-from models.ni_predictor_models import MetricPredictorLSTM, MetricPredictorAttenPool, ExLSTM, \
-    MetricPredictorLSTM_layers, ExLSTM_layers, ExLSTM_std, ExLSTM_log, ExLSTM_div, wordLSTM
-from models.ni_feat_extractors import Spec_feats, XLSREncoder_feats, XLSRFull_feats, \
-    HuBERTEncoder_feats, HuBERTFull_feats, WhisperEncoder_feats, WhisperFull_feats, WhisperBase_feats
-from exemplar import get_ex_set
+
+import numpy
+import numpy as np
+import pandas as pd
+import speechbrain as sb
+import torch
+import torch.nn as nn
+import torch.optim as optim
+import torchaudio.transforms as T
+
+from attrdict import AttrDict
+from scipy.optimize import curve_fit
+from scipy.stats import spearmanr
+from sklearn.model_selection import train_test_split
+from torch.utils.data import DataLoader
+from tqdm import tqdm
 
 from constants import DATAROOT, DATAROOT_CPC1
+from data_handling import get_disjoint_val_set
+from exemplar import get_ex_set
+from models.ni_feat_extractors import (HuBERTEncoder_feats, HuBERTFull_feats,
+                                       Spec_feats, WhisperBase_feats,
+                                       WhisperEncoder_feats, WhisperFull_feats,
+                                       XLSREncoder_feats, XLSRFull_feats)
+from models.ni_predictor_models import (ExLSTM, ExLSTM_div, ExLSTM_layers,
+                                        ExLSTM_log, ExLSTM_std,
+                                        MetricPredictorAttenPool,
+                                        MetricPredictorLSTM,
+                                        MetricPredictorLSTM_layers, wordLSTM)
+
+#from GHA import audiogram
+
+
 
 def rmse_score(x, y):
     return np.sqrt(np.mean((x - y) ** 2))
@@ -132,14 +140,19 @@ def extract_feats(feat_extractor, data, args, theset, save_feats_file = None):
         
     ]
     if args.use_CPC1:
+        print(args.dataroot,theset)
+        input()
         dynamic_items.append(
             {"func": lambda l: audio_pipeline("%s/HA_outputs/%s/%s.wav"%(args.dataroot,theset,l),32000),
             "takes": ["signal"],
             "provides": "wav"}
         )
     else:
+
+        print(f"{args.dataroot}/HA_outputs/signals/%s.wav")
+        input()
         dynamic_items.append(
-            {"func": lambda l,y: audio_pipeline("%s/HA_outputs/%s.%s/%s/%s.wav"%(args.dataroot,theset,args.N,y,l),32000),
+            {"func": lambda l,y: audio_pipeline(f"{args.dataroot}/HA_outputs/signals/{y}/{l}.wav",32000),
             "takes": ["signal","subset"],
             "provides": "wav"}
         )
@@ -989,7 +1002,7 @@ def main(args, config):
         run.finish()
 
 if __name__ == "__main__":
-    
+    print("CUDA available = ", torch.cuda.is_available())
     parser = argparse.ArgumentParser()
 
     parser.add_argument(

@@ -2,6 +2,8 @@ import numpy as np
 from sklearn import cluster
 from sklearn.metrics import euclidean_distances
 from sklearn.metrics.pairwise import euclidean_distances as dist
+
+
 def normalize(mat, neg=False):
     min_value = np.min(mat)
     data = mat-min_value
@@ -69,8 +71,10 @@ def upgma_channel_sort(W):
     return channel_order
 """
 if __name__ == '__main__':
-    from UPGMApy.UPGMA import alpha_labels
     import sys
+
+    from UPGMApy.UPGMA import alpha_labels
+
     # sys.setrecursionlimit(10000)
     # M_labels = alpha_labels("A", "G")   #A through G
     # M = [

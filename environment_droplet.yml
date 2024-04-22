@@ -92,4 +92,4 @@ dependencies:
       - typing-extensions==4.4.0
       - urllib3==1.26.14
       - wheel==0.38.4
-prefix: /jmain02/home/J2AD003/txk68/gxc35-txk68/.conda/envs/clarity
+prefix: ~/miniconda3/envs/clarity

@@ -1,0 +1,186 @@
+{
+    "os": "Linux-6.5.0-25-generic-x86_64-with-glibc2.35",
+    "python": "3.9.16",
+    "heartbeatAt": "2024-04-18T11:41:40.969352",
+    "startedAt": "2024-04-18T11:41:40.806624",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--feats",
+        "WhisperFull",
+        "--model",
+        "LSTM_layers",
+        "--layer",
+        "-1",
+        "--N",
+        "1",
+        "--exp_id",
+        "base",
+        "--lr",
+        "0.00001",
+        "--weight_decay",
+        "0.0001",
+        "--train_disjoint",
+        "--n_epochs",
+        "25"
+    ],
+    "state": "running",
+    "program": "/home/local/ISDADS/ses440/Documents/GitHub/CPC2_challenge/MAIN_predict_intel_correctness_feats.py",
+    "codePathLocal": "MAIN_predict_intel_correctness_feats.py",
+    "codePath": "MAIN_predict_intel_correctness_feats.py",
+    "git": {
+        "remote": "https://github.com/RhiM1/CPC2_challenge.git",
+        "commit": "55a2696db1a2b00a9d22f1f337d2b103f33de0a1"
+    },
+    "email": "jwbailey@live.co.uk",
+    "root": "/home/local/ISDADS/ses440/Documents/GitHub/CPC2_challenge",
+    "host": "salp10315-ub",
+    "username": "ISDADS\\ses440",
+    "executable": "/home/local/ISDADS/ses440/miniconda3/envs/clarity/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 1157.4052083333333,
+        "min": 800.0,
+        "max": 4716.666666666667
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1185.086,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 1543.833,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 1577.826,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 834.865,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 1418.824,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 1597.359,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 861.162,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 152.73926162719727,
+            "used": 54.345191955566406
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3080",
+            "memory_total": 10737418240
+        }
+    ],
+    "memory": {
+        "total": 15.322296142578125
+    }
+}

@@ -1,9 +1,8 @@
 import torch
 import torch.nn.functional as F
 from torch import Tensor, nn
+
 from models.ni_predictors import PoolAttFF
-
-
 
 
 class Minerva_with_encoding(torch.nn.Module):

@@ -1,8 +1,8 @@
-from torch import Tensor, nn
 import torch
 import torch.nn.functional as F
-from transformers import HubertModel, HubertConfig, \
-    WhisperModel, WhisperFeatureExtractor, WhisperForConditionalGeneration
+from torch import Tensor, nn
+from transformers import (HubertConfig, HubertModel, WhisperFeatureExtractor,
+                          WhisperForConditionalGeneration, WhisperModel)
 
 
 class HuBERTWrapper_extractor(nn.Module):

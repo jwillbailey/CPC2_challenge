@@ -1,18 +1,19 @@
-from transformers import WhisperProcessor
-import pandas as pd
 import argparse
-import torch
-import numpy as np
-from data_handling import get_disjoint_val_set
-from torch.utils.data import Dataset
-import datasets
-from datasets import load_dataset, Dataset, Audio
 import os
-from torchaudio.transforms import SlidingWindowCmn
-import torchaudio.transforms as T
+
+import datasets
+import numpy as np
+import pandas as pd
 import speechbrain as sb
+import torch
+import torchaudio.transforms as T
+from datasets import Audio, Dataset, load_dataset
+from torch.utils.data import Dataset
+from torchaudio.transforms import SlidingWindowCmn
+from transformers import WhisperProcessor
 
 from constants import DATAROOT, DATAROOT_CPC1
+from data_handling import get_disjoint_val_set
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 resampler = T.Resample(32000, 16000).to(device)

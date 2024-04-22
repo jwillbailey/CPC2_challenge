@@ -1,0 +1,178 @@
+{
+    "os": "Linux-6.5.0-25-generic-x86_64-with-glibc2.35",
+    "python": "3.9.16",
+    "heartbeatAt": "2024-04-19T12:01:07.564563",
+    "startedAt": "2024-04-19T12:01:07.460696",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--feats",
+        "WhisperFull",
+        "--model",
+        "LSTM_layers",
+        "--layer",
+        "-1",
+        "--N",
+        "1",
+        "--exp_id",
+        "base",
+        "--lr",
+        "0.00001",
+        "--weight_decay",
+        "0.0001",
+        "--train_disjoint",
+        "--n_epochs",
+        "25"
+    ],
+    "state": "running",
+    "program": "/home/local/ISDADS/ses440/Documents/GitHub/CPC2_challenge/MAIN_predict_intel_correctness_feats.py",
+    "codePathLocal": "MAIN_predict_intel_correctness_feats.py",
+    "codePath": "MAIN_predict_intel_correctness_feats.py",
+    "git": {
+        "remote": "https://github.com/RhiM1/CPC2_challenge.git",
+        "commit": "55a2696db1a2b00a9d22f1f337d2b103f33de0a1"
+    },
+    "email": "jwbailey@live.co.uk",
+    "root": "/home/local/ISDADS/ses440/Documents/GitHub/CPC2_challenge",
+    "host": "salp10315-ub",
+    "username": "ISDADS\\ses440",
+    "executable": "/home/local/ISDADS/ses440/miniconda3/envs/clarity/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 2496.647291666666,
+        "min": 800.0,
+        "max": 4716.666666666667
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1841.641,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 871.087,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 800.414,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3455.51,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 4865.562,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 4895.914,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 4288.348,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 2215.412,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 4428.89,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 4670.012,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 4669.071,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 3327.972,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 4888.065,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 3484.398,
+            "min": 800.0,
+            "max": 5200.0
+        },
+        {
+            "current": 4563.091,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 4432.557,
+            "min": 800.0,
+            "max": 5100.0
+        },
+        {
+            "current": 2296.25,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 800.223,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 905.229,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 3358.481,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 805.871,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 152.73926162719727,
+            "used": 54.860740661621094
+        }
+    },
+    "memory": {
+        "total": 15.322296142578125
+    }
+}
